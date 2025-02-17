@@ -94,9 +94,48 @@
                 width: 30%;
                 height: auto;
             }
+
+            .navbar ul {
+                list-style-type: none;
+                background-color: black;
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 0.9375vw;
+                display: block;
+                text-align: center;
+            }
+
+            .navbar a:hover {
+                background-color: dimgray;
+            }
+
+            .navbar li{
+                float: right;
+                font-family: Playfair Display;
+            }
+
+            .navbar img {
+                width: 2.5%;
+                height: auto;
+                margin-left: 3.125vw;
+                margin-top: 5px;
+            }
         </style>
     </head>
     <body>
+        <nav class="navbar">
+            <ul>
+                <img src="images/logo.png" alt="logo">
+                <li><a href="https://www.pixel-dreams.fyi/games">Games</a></li>
+                <li><a href="https://www.pixel-dreams.fyi">Home</a></li>
+            </ul>
+        </nav>
         <img src="images/unrevealed.png" alt="unrevealed" class="image">
         <h1 class="gamename">Unrevealed Project 1</h1>
     </body>
