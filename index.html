@@ -33,17 +33,17 @@
 
             H1 {
                 animation: TextIn 0.6s ease-in;
-                height: 100px;
+                height: auto;
                 text-align: center;
                 border-width: 8px;
                 border-radius: 32px;
                 background-color: white;
                 font-size: 65px;
-                margin-left: 200px;
-                margin-right: 100px;
+                margin-left: 12.5vw;
+                margin-right: 6.25vw;
                 border-style: outset;
                 font-family: Satisfy;
-                width: auto;
+                width: 30.875vw;
             }
 
             .header {
@@ -51,21 +51,22 @@
                 align-items: center;
                 justify-content: center;
                 height: 500px;
+                background-image: url(images/banner-image.jpg)
             }
 
             H2 {
                 animation: TextIn 0.6s ease-in;
-                height: 75px;
+                height: auto;
                 text-align: center;
                 border-width: 8px;
                 border-radius: 32px;
                 background-color: white;
                 font-size: 65px;
-                margin-left: 100px;
-                margin-right: 800px;
+                margin-left: 6.25vw;
+                margin-right: 50vw;
                 border-style: outset;
                 font-family: Satisfy;
-                width: auto;
+                width: 31.25vw;
             }
 
             IMG {
@@ -79,22 +80,61 @@
             .frame {
                 background-color: black;
                 height: auto;
-                width: calc(100% - 400px);
+                width: calc(100% - 25vw);
                 margin: 0 auto;
             }
 
             P {
                 font-size: 40px;
                 color: white;
-                text-indent: 80px;
+                text-indent: 5vw;
                 font-family: Playfair Display;
+            }
+
+            .navbar ul {
+                list-style-type: none;
+                background-color: black;
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 0.9375vw;
+                display: block;
+                text-align: center;
+            }
+
+            .navbar a:hover {
+                background-color: dimgray;
+            }
+
+            .navbar li{
+                float: right;
+                font-family: Playfair Display;
+            }
+
+            .navbar img {
+                width: 2.5%;
+                height: auto;
+                margin-left: 3.125vw;
+                margin-top: 5px;
             }
         </style>
     </head>
     <body>
-        <div class="header" style="margin-top: 50px;">
+        <nav class="navbar">
+            <ul>
+                <img src="images/logo.png" alt="logo">
+                <li><a href="https://www.pixel-dreams.fyi/games">Games</a></li>
+                <li><a href="https://www.pixel-dreams.fyi">Home</a></li>
+            </ul>
+        </nav>
+        <div class="header" style="margin-top: 5.5359477124183005vh;">
             <h1>Pixel Dreams</h1>
-            <img src="images/logo.png" style="height: 400px; width: 400px;">
+            <img src="images/logo.png" style="height: auto; width: 25vw;">
         </div>
         <div class="spacer"></div>
         <h2>Priorities</h2>
