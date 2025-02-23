@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Playfair Display;
+    src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Satisfy;
+    src: url(fonts/Satisfy.ttf);
+}
+
+@keyframes TextIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+BODY {
+    background-image: url(images/background.png);
+}
+
+H1 {
+    animation: TextIn 0.6s ease-in;
+    height: auto;
+    text-align: center;
+    border-width: 8px;
+    border-radius: 32px;
+    background-color: white;
+    font-size: 65px;
+    margin-left: 12.5vw;
+    margin-right: 6.25vw;
+    border-style: outset;
+    font-family: Satisfy;
+    width: 30.875vw;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-image: url(images/banner-image.jpg)
+}
+
+H2 {
+    animation: TextIn 0.6s ease-in;
+    height: auto;
+    text-align: center;
+    border-width: 8px;
+    border-radius: 32px;
+    background-color: white;
+    font-size: 65px;
+    margin-left: 6.25vw;
+    margin-right: 50vw;
+    border-style: outset;
+    font-family: Satisfy;
+    width: 31.25vw;
+}
+
+IMG {
+    animation: TextIn 0.6s ease-in;
+}
+
+.spacer {
+    height: 100px;
+}
+
+.frame {
+    background-color: black;
+    height: auto;
+    width: calc(100% - 25vw);
+    margin: 0 auto;
+}
+
+P {
+    font-size: 40px;
+    color: white;
+    text-indent: 5vw;
+    font-family: Playfair Display;
+    animation: TextIn 0.6s ease-in;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.9375vw;
+    display: block;
+    text-align: center;
+    animation: TextIn 0.6s ease-in
+}
+
+.navbar a:hover {
+    background-color: dimgray;
+}
+
+.navbar li{
+    float: right;
+    font-family: Playfair Display;
+}
+
+.navbar img {
+    width: 2.5%;
+    height: auto;
+    margin-left: 3.125vw;
+    margin-top: 5px;
+}
