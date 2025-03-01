@@ -118,3 +118,13 @@
                 margin-left: 3.125vw;
                 margin-top: 5px;
             }
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.container img {
+    height: 200px;
+}
