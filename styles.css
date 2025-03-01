@@ -159,3 +159,7 @@ p a:hover {
 .short {
     width: 31.25vw;
 }
+
+.frame img {
+    margin-left: 5px;
+}
