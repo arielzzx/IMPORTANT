@@ -8,7 +8,7 @@
     src: url(fonts/Satisfy.ttf);
 }
 
-@keyframes TextIn {
+@keyframes TextIn1 {
     from {
         opacity: 0;
         transform: translateY(-20px);
@@ -20,12 +20,31 @@
     }
 }
 
+@keyframes TextIn2 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes ahover {
+    20% {color: #eee}
+    40% {color: #ddd}
+    60% {color: #ccc}
+    80% {color: #bbb}
+    100% {color: #aaa}
+}
+
 BODY {
     background-image: url(images/background.png);
 }
 
 H1 {
-    animation: TextIn 0.6s ease-in;
     height: auto;
     text-align: center;
     border-width: 8px;
@@ -47,8 +66,11 @@ H1 {
     background-image: url(images/banner-image.jpg)
 }
 
+.header h1 {
+    animation: TextIn1 0.6s ease-in;
+}
+
 H2 {
-    animation: TextIn 0.6s ease-in;
     height: auto;
     text-align: center;
     border-width: 8px;
@@ -59,7 +81,10 @@ H2 {
     margin-right: 50vw;
     border-style: outset;
     font-family: Satisfy;
-    width: 31.25vw;
+}
+
+.header img {
+    animation: TextIn2 0.6s ease-in;
 }
 
 IMG {
@@ -116,4 +141,21 @@ P {
     height: auto;
     margin-left: 3.125vw;
     margin-top: 5px;
+}
+
+p a {
+    color: white;
+}
+
+p a:hover {
+    animation: ahover 0.2s ease-in;
+    color: #aaa;
+}
+
+.long {
+    width: 45vw
+}
+
+.short {
+    width: 31.25vw;
 }
